@@ -7,6 +7,7 @@ const constBackoff = require("./lib/backoffs/const_backoff");
 const linearBackoff = require("./lib/backoffs/linear_backoff");
 const expoBackoff = require("./lib/backoffs/expo_backoff");
 const buildWrap = require("./lib/build_wrap");
+const limitParallel = require("./lib/wrappers/limit_parallel");
 
 module.exports = {
   buildRun,
@@ -17,5 +18,6 @@ module.exports = {
   constBackoff,
   linearBackoff,
   expoBackoff,
-  buildWrap
+  buildWrap,
+  limitParallel
 };
