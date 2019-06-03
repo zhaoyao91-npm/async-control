@@ -1,6 +1,6 @@
 {
   "name": "@zhaoyao91/async-control",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Help control parallel executions of async tasks.",
   "main": "index.js",
   "scripts": {
