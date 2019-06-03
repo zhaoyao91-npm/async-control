@@ -1,19 +1,18 @@
 {
   "name": "@zhaoyao91/async-control",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Help control parallel executions of async tasks.",
   "main": "index.js",
   "scripts": {
     "test": "tap"
   },
   "keywords": [
-    "zhaoyao91",
     "async-control"
   ],
   "engines": {
     "node": ">=10"
   },
-  "repository": "github.com/zhaoyao91-npm/async-control",
+  "repository": "github:zhaoyao91-npm/async-control",
   "author": {
     "name": "zhaoyao91",
     "email": "zhaoyao91@aliyun.com"
