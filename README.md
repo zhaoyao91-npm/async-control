@@ -5,7 +5,7 @@ Help control parallel executions of async tasks/functions.
 ## Install
 
 ```bash
-npm i @bucuo/async-control
+npm i @zhaoyao91/async-control
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ const {
   limitRate,
   limitParallel,
   expoBackoff
-} = require("@bucuo/async-control");
+} = require("@zhaoyao91/async-control");
 
 const wrappers = [
   returnError(), // returning error instead of throwing
@@ -49,7 +49,7 @@ const wrappers = [
 You can build a `run` function to run many tasks (async functions without arg) with controls.
 
 ```js
-const { buildRun } = require("@bucuo/async-control");
+const { buildRun } = require("@zhaoyao91/async-control");
 
 const wrappers = ...
 
@@ -67,7 +67,7 @@ const results = await run(tasks);
 You can wrap an existing async function to get a controlled version of it.
 
 ```js
-const { buildWrap } = require("@bucuo/async-control");
+const { buildWrap } = require("@zhaoyao91/async-control");
 
 const wrappers = ...
 
@@ -76,7 +76,7 @@ const wrap = buildWrap(wrappers);
 
 const myFetch = wrap(fetch);
 
-const response = await fetch("https://github.com/bucuo-js");
+const response = await fetch("https://github.com/zhaoyao91-npm");
 ```
 
 ## API
